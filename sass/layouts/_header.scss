@@ -1,0 +1,112 @@
+/* Секція хедер */
+.header {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-color);
+
+    margin-right: 93px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__logo span {
+    color: var(--accent-txt-color);
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-color);
+    transition: color var(--anim);
+
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-color);
+    }
+}
+
+
+.nav__link--marker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--accent-txt-color);
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        background-color: var(--accent-txt-color);
+        border-radius: 2px;
+    }
+}
+
+
+.header-contact {
+    margin-left: auto;
+}
+
+.header-contact__mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-txt-color);
+}
+
+.contact {
+    transition: color var(--anim);
+
+
+    &:hover .header-contact__svg,
+    &:focus .header-contact__svg {
+        fill: #2196f3;
+    }
+}
+
+
+.header-contact__number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-txt-color);
+
+    margin-left: 30px;
+}
+
+.header-contact__svg {
+    margin-right: 10px;
+    fill: #757575;
+}

@@ -1,0 +1,42 @@
+/* Секція особливості */
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features__list {
+    display: flex;
+}
+
+.features__section:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features__icons {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    height: 120px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.features__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-txt-color);
+}
+
+.features__paragraph {
+    width: 270px;
+    height: 75px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
